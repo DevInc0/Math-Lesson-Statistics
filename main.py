@@ -1,18 +1,18 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def draw_pie(values : list, labels : list):
+def draw_pie(values: list, labels: list):
     plt.figure()
     plt.pie(values, labels = labels)
     plt.title('Круговая диаграмма')
 
-def draw_bars(values : list, labels : list):
+def draw_bars(values: list, labels: list):
     plt.figure()
     plt.bar(values, labels)
     plt.grid(True)
     plt.title('Столбчатая диаграмма')
 
-def draw_plot(values, labels):
+def draw_plot(values: list, labels: list):
     plt.figure()
     plt.plot(values, labels)
     plt.grid(True)
